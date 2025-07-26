@@ -1,0 +1,44 @@
+[build-system]
+requires = ["flit-core >= 3.8", "ninja"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "mobileclip"
+version = "0.1.0"
+description = "MobileCLIP: Fast Image-Text Models through Multi-Modal Reinforced Training."
+readme = "README.md"
+requires-python = ">= 3.10"
+license.file = "LICENSE"
+authors = [
+    { name = "Lornatang", email = "liuchangyu1111@gmail.com" },
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Copyright (c) Lornatang. All rights reserved.",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Operating System :: POSIX :: Linux",
+]
+urls.homepage = "https://github.com/pypa/build"
+urls.changelog = "https://pypa-build.readthedocs.io/en/stable/changelog.html"
+
+dependencies = [
+    "clip-benchmark>=1.4.0",
+    "datasets>=2.21.0",
+    "open-clip-torch>=2.20.0",
+    "timm",
+    "torch>=2.3.0",
+    "torchvision>=0.18.0",
+]
+
+[project.scripts]
+pyproject-build = "build.__main__:entrypoint"
+
+[project.entry-points."pipx.run"]
+build = "build.__main__:entrypoint"
