@@ -1,0 +1,61 @@
+# compilation and distribution
+__pycache__/
+_ext/
+*.pyc
+*.pyd
+*.so
+*.dll
+*.egg-info/
+build/
+dist/
+wheels/
+
+# ipython/jupyter notebooks
+*.ipynb
+**/.ipynb_checkpoints/
+
+# editor temporaries
+*.swn
+*.swo
+*.swp
+*~
+
+# editor settings
+.idea/
+.vscode/
+_darcs/
+
+# develop formats
+*.pth
+*.pkl
+*.npy
+*.pt
+*.json
+*.csv
+*.onnx
+*.engine
+
+# image formats
+*.jpg
+*.JPG
+*.jpeg
+*.JPEG
+*.png
+*.PNG
+*.gif
+*.GIF
+*.bmp
+*.BMP
+*.tif
+*.TIF
+*.tiff
+*.TIFF
+*.webp
+*.WEBP
+
+# project dirs
+*.sh
+*.yaml
+datasets/
+results/
+tools/
